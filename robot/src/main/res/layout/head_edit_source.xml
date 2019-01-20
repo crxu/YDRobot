@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_select_all"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginTop="@dimen/size_13"
+        android:gravity="center"
+        android:background="@drawable/button_confirm_bg"
+        android:text="全选"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_cancel"
+        android:layout_toRightOf="@id/txt_select_all"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_13"
+        android:gravity="center"
+        android:background="@drawable/button_confirm_bg"
+        android:text="取消"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_edit"
+        android:layout_toLeftOf="@+id/txt_sort"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_13"
+        android:gravity="center"
+        android:background="@drawable/button_confirm_bg"
+        android:text="编辑"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/txt_sort"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginTop="@dimen/size_13"
+        android:layout_marginRight="@dimen/size_15"
+        android:gravity="center"
+        android:background="@drawable/button_confirm_bg"
+        android:text="排序"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/txt_sync_confirm"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginTop="@dimen/size_13"
+        android:layout_marginRight="@dimen/size_15"
+        android:gravity="center"
+        android:background="@drawable/button_confirm_bg"
+        android:text="确定同步"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_delete_confirm"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginTop="@dimen/size_13"
+        android:layout_marginRight="@dimen/size_15"
+        android:gravity="center"
+        android:background="@drawable/button_confirm_bg"
+        android:text="删除"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_sort_confirm"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="@dimen/size_30"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_15"
+        android:gravity="center"
+        android:background="@drawable/button_confirm_bg"
+        android:text="确定"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_sort_confirm_tip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_sort_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_7"
+        android:layout_marginRight="@dimen/size_15"
+        android:gravity="center"
+        android:text="长按右边的按钮并上下拖动排序"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/tip_color"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_head_edit_source_bottom2"
+        android:layout_below="@id/txt_sort_confirm_tip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_13"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_head_edit_source_bottom"
+        android:layout_marginTop="@dimen/size_43"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_13" />
+</RelativeLayout>

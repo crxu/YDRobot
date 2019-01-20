@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/parent_style">
+
+    <com.readyidu.robot.ui.widgets.CustomTopBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:show_left_type="2"
+        app:show_right="false"
+        app:top_title="频道重命名" />
+
+    <TextView
+        android:id="@+id/txt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_height"
+        android:layout_alignBottom="@+id/top_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/title_padding_top"
+        android:layout_marginRight="@dimen/size_15"
+        android:gravity="center"
+        android:padding="@dimen/size_6"
+        android:textSize="@dimen/font_size_15"
+        android:textColor="@color/content_color"
+        android:text="完成" />
+
+    <TextView
+        android:id="@+id/tag"
+        style="@style/tip_text_style"
+        android:layout_below="@+id/top_bar"
+        android:layout_margin="@dimen/edge_size"
+        android:textSize="@dimen/font_size_16"
+        android:textColor="@color/content_color"
+        android:text="旧名字" />
+
+    <TextView
+        android:id="@+id/txt_old_name"
+        style="@style/content_text_style"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tag"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_16"
+        android:textColor="@color/tip_color"
+        android:text="aaa" />
+
+    <TextView
+        android:id="@+id/tag1"
+        style="@style/tip_text_style"
+        android:layout_below="@+id/txt_old_name"
+        android:layout_margin="@dimen/edge_size"
+        android:textSize="@dimen/font_size_16"
+        android:textColor="@color/content_color"
+        android:text="新名字" />
+
+    <RelativeLayout
+        android:id="@+id/tag2"
+        style="@style/common_container_style"
+        android:layout_below="@+id/tag1">
+
+        <EditText
+            android:id="@+id/edit_name"
+            style="@style/edit_style" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/tip_text_style"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tag2"
+        android:layout_marginTop="@dimen/size_10"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_16"
+        android:textColor="@color/tip_color"
+        android:text="不超过10个字" />
+</RelativeLayout>

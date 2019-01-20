@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_add_custom_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.readyidu.robot.ui.news.widgets.RoundAngleRelativeLayout
+            android:id="@+id/rarl_add_custom_channel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_203"
+            android:layout_marginLeft="@dimen/size_15"
+            android:layout_marginRight="@dimen/size_15"
+            android:layout_marginTop="@dimen/size_16"
+            app:bottomLeftRadius="@dimen/size_10"
+            app:bottomRightRadius="@dimen/size_10"
+            app:topLeftRadius="@dimen/size_10"
+            app:topRightRadius="@dimen/size_10">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_add_custom_channel_background" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tag">
+
+                <TextView
+                    android:layout_width="@dimen/size_125"
+                    android:layout_height="@dimen/size_45"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_add_tv_live"
+                    android:gravity="center"
+                    android:text="@string/custom_channel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_17" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_25"
+                android:layout_alignParentBottom="true"
+                android:background="@color/tran_tv_source_bg_color"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/size_10"
+                android:text="@string/add_custom_channel_tip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_15" />
+        </com.readyidu.robot.ui.news.widgets.RoundAngleRelativeLayout>
+
+        <TextView
+            android:id="@+id/add_source"
+            android:layout_width="@dimen/size_115"
+            android:layout_height="@dimen/size_45"
+            android:layout_below="@id/rarl_add_custom_channel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/size_4"
+            android:layout_marginTop="@dimen/size_20"
+            android:background="@drawable/bg_theme_color_round"
+            android:gravity="center"
+            android:text="@string/open_at_once"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_17" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_20"
+            android:layout_below="@id/add_source" />
+    </RelativeLayout>
+
+</merge>

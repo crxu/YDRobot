@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_music_item_selector">
+
+    <ImageView
+        android:id="@+id/iv_item_music_head"
+        android:layout_width="@dimen/size_40"
+        android:layout_height="@dimen/size_40"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_10"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_item_music_name"
+        android:layout_toRightOf="@id/iv_item_music_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_15"
+        android:textSize="@dimen/font_size_16"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/tv_item_music_author"
+        android:layout_below="@id/tv_item_music_name"
+        android:layout_toRightOf="@id/iv_item_music_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:textSize="@dimen/font_size_12"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <View
+        android:id="@+id/item_music_line"
+        android:layout_below="@id/iv_item_music_head"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_10"
+        style="@style/line_theme_list_horizontal"/>
+</RelativeLayout>

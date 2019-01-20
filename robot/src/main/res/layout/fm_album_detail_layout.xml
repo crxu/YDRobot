@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+
+    <com.readyidu.basic.widgets.title.CustomerTitle
+        android:id="@+id/fm_album_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="专辑详情" />
+
+    <RelativeLayout
+        android:id="@+id/fm_album_detail_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_album_detail_title"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/fm_album_detail_cover"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/fm_album_detail_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/fm_album_detail_cover"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <com.readyidu.robot.ui.fm.view.CircleImageView
+            android:id="@+id/fm_album_detail_writer_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/fm_album_detail_title_tv"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/fm_album_detail_cover" />
+
+        <TextView
+            android:id="@+id/fm_album_detail_writer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fm_album_detail_title_tv"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/fm_album_detail_writer_img"
+            android:lines="1"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/fm_album_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fm_album_detail_writer"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/fm_album_detail_cover"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/fm_album_detail_play_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fm_album_detail_time"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/fm_album_detail_cover"
+            android:drawableLeft="@mipmap/fm_bofang_s"
+            android:drawablePadding="4dp"
+            android:textColor="#999999"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/fm_album_detail_play_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fm_album_detail_time"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/fm_album_detail_play_count"
+            android:drawableLeft="@mipmap/fm_jishu"
+            android:drawablePadding="4dp"
+            android:textColor="#999999"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fm_album_detail_play_tab"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/fm_album_detail_head"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fm_album_detail_play_tab_sum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="简介"
+            android:textColor="@color/material_blue"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.4dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:background="#666666" />
+
+        <Button
+            android:id="@+id/fm_album_detail_play_tab_track"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="节目"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fm_album_detail_play_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_album_detail_play_tab"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/fm_album_detail_play_control_play"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/fm_bofang_l" />
+
+        <TextView
+            android:id="@+id/fm_album_detail_play_control_play_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/fm_album_detail_play_control_play"
+            android:text="全部播放"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/fm_album_detail_play_control_steps_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:padding="5dp"
+            android:src="@mipmap/fm_channel_down" />
+
+        <Button
+            android:id="@+id/fm_album_detail_play_control_steps_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/fm_album_detail_play_control_steps_img"
+            android:background="@android:color/transparent"
+            android:text="选集"
+            android:textAlignment="textEnd"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/fm_album_detail_play_control_sort_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/fm_album_detail_play_control_steps_tv"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:padding="5dp"
+            android:src="@mipmap/fm_sort_down" />
+
+        <Button
+            android:id="@+id/fm_album_detail_play_control_sort_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/fm_album_detail_play_control_sort_img"
+            android:background="@android:color/transparent"
+            android:text="正序"
+            android:textAlignment="textEnd"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fm_album_detail_play_control_steps_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fm_album_detail_play_control_steps_tv"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/fm_album_detail_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fm_album_detail_play_control"
+        android:layout_marginTop="12dp"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/fm_album_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:divider="@color/bg_color"
+            android:dividerHeight="0.4dp" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <ScrollView
+        android:id="@+id/fm_album_detail_sum_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fm_album_detail_play_control"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fm_album_detail_sum_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="50dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/fm_album_detail_play_control_bottom_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/bottom_play">
+
+        <com.readyidu.robot.ui.fm.view.CycleImageView
+            android:id="@+id/fm_album_detail_play_control_bottom_play_cover"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="6dp" />
+
+    </RelativeLayout>
+
+
+    <com.readyidu.robot.component.voice.VoiceBar
+        android:id="@+id/voice_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

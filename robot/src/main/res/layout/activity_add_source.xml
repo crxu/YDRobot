@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/parent_style">
+
+    <com.readyidu.robot.ui.widgets.CustomTopBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:show_left_type="2"
+        app:show_right="false"
+        app:top_title="添加自定义源" />
+
+    <TextView
+        android:id="@+id/txt_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignBottom="@+id/top_bar"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_31"
+        android:paddingRight="@dimen/size_7"
+        android:paddingTop="@dimen/title_padding_top"
+        android:text="返回"
+        android:textSize="@dimen/font_size_16" />
+
+    <TextView
+        android:id="@+id/txt_close"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignBottom="@+id/top_bar"
+        android:layout_toRightOf="@+id/txt_back"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_7"
+        android:paddingRight="@dimen/size_7"
+        android:paddingTop="@dimen/title_padding_top"
+        android:text="关闭"
+        android:textSize="@dimen/font_size_16" />
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:layerType="software" />
+
+    <com.readyidu.basic.widgets.EmptyView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:background="@color/background_color"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/txt_add_source"
+        android:layout_width="@dimen/size_50"
+        android:layout_height="@dimen/size_50"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/edge_size"
+        android:background="@drawable/shape_bg_add_source"
+        android:gravity="center"
+        android:text="@string/add_source"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

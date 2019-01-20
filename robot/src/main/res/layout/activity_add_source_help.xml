@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.readyidu.robot.ui.widgets.CustomTopBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:show_left_type="2"
+        app:show_right="false"
+        app:top_title="自定义源频道添加使用说明" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="@dimen/size_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5"
+                android:paddingRight="@dimen/size_25"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_forum_guide2"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_marginTop="@dimen/size__15"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/add_source_tip"
+                android:textColor="@color/content_color"
+                android:textSize="@dimen/font_size_16"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_add_source"
+                android:layout_width="@dimen/size_131"
+                android:layout_height="@dimen/size_50"
+                android:layout_below="@id/txt_tip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_28"
+                android:background="@drawable/bg_theme_color_round"
+                android:gravity="center"
+                android:text="@string/visit_forum"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_17"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_25"
+                android:layout_below="@id/txt_add_source" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

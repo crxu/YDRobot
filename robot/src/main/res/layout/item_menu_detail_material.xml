@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_30">
+
+    <TextView
+        android:id="@+id/tv_menu_detail_material_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/size_15"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/content_color"
+        android:textSize="15sp"
+        tools:text="盐分" />
+
+    <TextView
+        android:id="@+id/tv_menu_detail_material_desc"
+        android:layout_width="@dimen/size_123.5"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/content_color"
+        android:textSize="15sp"
+        tools:text="适量" />
+</RelativeLayout>

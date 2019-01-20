@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/size_85"
+    android:layout_height="@dimen/size_30">
+
+    <View
+        android:id="@+id/view_tv_source_background"
+        android:layout_width="@dimen/size_12"
+        android:layout_height="@dimen/size_12"
+        android:layout_marginLeft="@dimen/size_18"
+        android:background="@drawable/ic_radio_button_unselect"
+        android:layout_marginTop="@dimen/size_3"/>
+
+    <TextView
+        android:id="@+id/tv_tv_source_name"
+        android:layout_toRightOf="@id/view_tv_source_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_7"
+        android:maxLines="1"
+        android:text="源11"
+        android:textColor="@color/content_color"
+        android:textSize="@dimen/font_size_14"/>
+</RelativeLayout>

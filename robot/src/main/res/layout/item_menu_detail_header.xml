@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/iv_menu_detail_header"
+        android:layout_width="match_parent"
+        android:layout_height="239dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tv_menu_detail_name"
+        android:layout_below="@id/iv_menu_detail_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:layout_marginLeft="@dimen/size_15"
+        tools:text="红烧肉"
+        android:textSize="@dimen/font_size_18"
+        android:textStyle="bold"
+        android:textColor="@color/content_color"/>
+
+    <TextView
+        android:id="@+id/tv_menu_detail_introduce"
+        android:layout_below="@id/tv_menu_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        tools:text="红烧肉"
+        android:textSize="@dimen/font_size_14"
+        android:textStyle="bold"
+        android:textColor="@color/tip_color"/>
+
+    <View
+        android:id="@+id/tv_menu_detail_line1"
+        android:layout_below="@id/tv_menu_detail_introduce"
+        android:layout_marginTop="@dimen/size_15"
+        android:layout_marginLeft="@dimen/edge_size"
+        android:layout_marginRight="@dimen/edge_size"
+        style="@style/line_theme_horizontal"/>
+
+    <ImageView
+        android:id="@+id/iv_menu_detail_header_material"
+        android:layout_below="@id/tv_menu_detail_line1"
+        android:layout_width="@dimen/size_18"
+        android:layout_height="@dimen/size_17"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_20"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_menu_material_detail"/>
+
+    <TextView
+        android:id="@+id/tv_menu_detail_material_word"
+        android:layout_below="@id/tv_menu_detail_line1"
+        android:layout_toRightOf="@id/iv_menu_detail_header_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_18"
+        android:text="@string/menu_detail_material_detail"
+        android:textSize="@dimen/font_size_17"
+        android:textColor="@color/content_color"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_menu_detail_material"
+        android:layout_below="@id/tv_menu_detail_material_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_15"/>
+
+    <View
+        android:id="@+id/tv_menu_detail_line2"
+        android:layout_below="@id/rv_menu_detail_material"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_marginLeft="@dimen/edge_size"
+        android:layout_marginRight="@dimen/edge_size"
+        style="@style/line_theme_horizontal"/>
+
+    <ImageView
+        android:id="@+id/iv_menu_detail_header_step"
+        android:layout_below="@id/tv_menu_detail_line2"
+        android:layout_width="@dimen/size_18"
+        android:layout_height="@dimen/size_16.5"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_20"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_menu_cook_step"/>
+
+    <TextView
+        android:id="@+id/tv_menu_detail_step"
+        android:layout_below="@id/tv_menu_detail_line2"
+        android:layout_toRightOf="@id/iv_menu_detail_header_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_20"
+        android:text="@string/menu_detail_step"
+        android:textSize="@dimen/font_size_17"
+        android:textColor="@color/content_color"/>
+
+    <TextView
+        android:layout_below="@id/tv_menu_detail_step"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15" />
+</RelativeLayout>

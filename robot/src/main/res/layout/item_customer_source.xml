@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_height"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/edge_size"
+    android:paddingRight="@dimen/edge_size">
+
+    <ImageView
+        android:id="@+id/img_select"
+        android:layout_width="@dimen/size_16"
+        android:layout_height="@dimen/size_16"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_source_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_80"
+        android:layout_toRightOf="@id/img_select"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="自定义源"
+        android:textColor="@color/content_color"
+        android:textSize="@dimen/font_size_16" />
+
+    <TextView
+        android:id="@+id/txt_rename"
+        android:layout_width="@dimen/size_69"
+        android:layout_height="@dimen/size_27"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_theme_color_round_border"
+        android:gravity="center"
+        android:text="重命名"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/size_14" />
+
+    <ImageView
+        android:id="@+id/img_tag"
+        android:layout_width="@dimen/size_23.5"
+        android:layout_height="@dimen/size_15.5"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_sort_source"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/line_theme" />
+</RelativeLayout>

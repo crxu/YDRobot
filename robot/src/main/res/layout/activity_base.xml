@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.readyidu.robot.ui.widgets.CustomTopBar
+        android:id="@+id/top_bar"
+        app:show_left_type="2"
+        app:show_right="false"
+        app:top_title="@string/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/include_layout"
+        android:layout_below="@id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size_55"/>
+
+    <com.readyidu.robot.component.voice.VoiceBar
+        android:id="@+id/voice_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

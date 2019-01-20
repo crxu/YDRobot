@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#efeff4"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/container_voice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_height">
+
+        <CheckBox
+            android:id="@+id/toggle"
+            android:layout_width="@dimen/size_31"
+            android:layout_height="@dimen/size_31"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/edge_size"
+            android:layout_marginRight="@dimen/edge_size"
+            android:background="@drawable/selector_toggle"
+            android:button="@null"
+            android:checked="true" />
+
+        <ImageView
+            android:id="@+id/img_function"
+            android:layout_width="@dimen/size_31"
+            android:layout_height="@dimen/size_31"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/edge_size"
+            android:layout_marginRight="@dimen/edge_size"
+            android:src="@drawable/ic_function" />
+
+        <EditText
+            android:id="@+id/edit_query"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_35"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_function"
+            android:layout_toRightOf="@+id/toggle"
+            android:background="@drawable/shape_edit_bg"
+            android:paddingLeft="@dimen/size_3"
+            android:paddingRight="@dimen/size_3"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/btn_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_35"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_function"
+            android:layout_toRightOf="@+id/toggle"
+            android:background="@drawable/shape_edit_bg"
+            android:gravity="center"
+            android:text="按住说话"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/container_function"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_200"
+        android:layout_below="@+id/container_voice" />
+</LinearLayout>

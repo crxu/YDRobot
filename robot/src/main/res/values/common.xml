@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--string-->
+    <string name="register_account_tip">账号是6–20位的数字、字母（不能为纯数字组合）</string>
+    <!--背景颜色-->
+    <color name="grey_background_color">#F3F3F5</color>
+    <color name="status_background_color">#AAAAAA</color>
+    <color name="background_login_color">#3a404e</color>
+    <color name="background_model_color">@android:color/white</color>
+    <color name="item_music_press_background">#33619fff</color>
+    <color name="item_tv_press_background">@color/color_line</color>
+
+
+    <style name="line_theme_horizontal" parent="wrap_match">
+        <item name="android:background">@color/color_line</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_0.5</item>
+    </style>
+
+    <!--列表item分割线-->
+    <style name="line_theme_list_horizontal" parent="line_theme_horizontal">
+        <item name="android:layout_marginLeft">@dimen/size_15</item>
+        <item name="android:layout_marginRight">@dimen/size_15</item>
+    </style>
+</resources>

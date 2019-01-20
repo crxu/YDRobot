@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_menu_cook_step"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_height="@dimen/size_185"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tv_menu_cook_step_detail"
+        android:layout_below="@id/iv_menu_cook_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_13"
+        android:textSize="@dimen/font_size_17"
+        android:textColor="@color/content_color"/>
+
+    <TextView
+        android:layout_below="@id/tv_menu_cook_step_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_20"/>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <size
+        android:width="@dimen/size_16"
+        android:height="@dimen/size_16"/>
+    <solid android:color="@color/color_line"/>
+</shape>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--&lt;!&ndash; 白色前景 &ndash;&gt;-->
+    <!--<item android:id="@android:id/secondaryProgress"-->
+        <!--android:gravity="center">-->
+        <!--<shape-->
+            <!--android:shape="oval">-->
+            <!--<size-->
+                <!--android:width="@dimen/size_13"-->
+                <!--android:height="@dimen/size_13" />-->
+            <!--<solid android:color="@color/white" />-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--&lt;!&ndash; 透明阴影 &ndash;&gt;-->
+    <!--<item android:id="@android:id/background"-->
+        <!--android:gravity="center">-->
+        <!--<shape-->
+            <!--android:shape="oval">-->
+            <!--<size-->
+                <!--android:height="@dimen/size_15"-->
+                <!--android:width="@dimen/size_15" />-->
+            <!--<solid android:color="#46ffffff" />-->
+        <!--</shape>-->
+    <!--</item>-->
+<!--</layer-list>-->

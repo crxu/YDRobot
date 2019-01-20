@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTopBar">
+        <attr name="show_status_bar" format="boolean" />
+        <attr name="show_title_bar" format="boolean" />
+        <attr name="show_title" format="boolean" />
+        <attr name="show_double_title" format="boolean" />
+        <attr name="show_bottom_line" format="boolean" />
+        <attr name="bottom_line_color" format="color|reference" />
+        <attr name="show_left_type" format="integer" />
+        <attr name="show_right" format="boolean" />
+        <attr name="show_right_img" format="boolean" />
+        <attr name="top_title" format="reference|string" />
+        <attr name="top_double_title1" format="reference|string" />
+        <attr name="top_double_title2" format="reference|string" />
+        <attr name="right_img" format="reference" />
+        <attr name="top_bar_bg_color" format="color|reference" />
+        <attr name="status_bar_bg_color" format="color|reference" />
+        <attr name="back_icon" format="reference" />
+        <attr name="use_bar_bg" format="boolean" />
+        <attr name="title_text_color" format="color|reference" />
+        <attr name="double_title_text_color" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MusicLineView">
+        <attr name="jungle68_line_color" format="color" />
+        <attr name="jungle68_anim_is_start" format="boolean" />
+        <attr name="jungle68_line_with" format="dimension" />
+        <attr name="jungle68_line_spacing" format="dimension" />
+        <attr name="jungle68_line_nums" format="integer" />
+        <attr name="jungle68_max_line_height" format="dimension" />
+        <attr name="jungle68_max_level" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="PieChart">
+        <attr name="marqueeEnabled" format="boolean" />
+        <attr name="edgeEffectEnabled" format="boolean" />
+        <attr name="edgeEffectWidth" format="integer" />
+        <attr name="edgeEffectColor" format="color" />
+        <attr name="pauseDuration" format="integer" />
+        <attr name="forceMarquee" format="boolean" />
+        <attr name="centerText" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="WheelView">
+        <attr name="awv_textsize" format="integer" />
+        <attr name="awv_lineSpace" format="float" />
+        <attr name="awv_centerTextColor" format="integer" />
+        <attr name="awv_outerTextColor" format="integer" />
+        <attr name="awv_dividerTextColor" format="integer" />
+        <attr name="awv_itemsVisibleCount" format="integer" />
+        <attr name="awv_isLoop" format="boolean" />
+        <attr name="awv_initialPosition" format="integer" />
+        <attr name="awv_scaleX" format="float" />
+    </declare-styleable>
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"/>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RoundAngleRelativeLayout">
+        <attr name="radius" format="dimension" />
+        <attr name="topLeftRadius" format="dimension" />
+        <attr name="topRightRadius" format="dimension" />
+        <attr name="bottomLeftRadius" format="dimension" />
+        <attr name="bottomRightRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Theme">
+        <attr name="customImageViewStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CustomImageView">
+        <attr name="imCircle" format="boolean" />
+        <attr name="imRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_50">
+
+    <TextView
+        android:id="@+id/tv_sitcom_on_demand_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_49.5"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/size_15"
+        android:text="服务券" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_setting_go"/>
+
+    <View style="@style/line_theme" />
+</RelativeLayout>

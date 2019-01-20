@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_43.5"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_news_horizontal_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:paddingRight="@dimen/size_16"
+        android:singleLine="true"
+        android:text="频道"
+        android:textColor="@color/content_color"
+        android:textSize="@dimen/font_size_14" />
+
+    <View
+        android:id="@+id/view_news_horizontal_item_split"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_2.5"
+        android:layout_alignLeft="@id/view_news_horizontal_item_title"
+        android:layout_alignRight="@id/view_news_horizontal_item_title"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/size_3.5"
+        android:layout_marginRight="@dimen/size_17.5"
+        android:background="@color/content_color"
+        android:visibility="visible" />
+
+</RelativeLayout>

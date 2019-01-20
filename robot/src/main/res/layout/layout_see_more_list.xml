@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_see_more_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/iv_see_more_select_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_15"
+            android:layout_marginTop="@dimen/size_15"
+            android:textColor="@color/content_color"
+            android:textSize="@dimen/font_size_17" />
+
+        <ImageView
+            android:id="@+id/iv_see_more_layout_close"
+            android:layout_width="@dimen/size_20"
+            android:layout_height="@dimen/size_20"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/size_15"
+            android:layout_marginTop="@dimen/size_15"
+            android:src="@drawable/ic_top_bar_close1" />
+
+        <RelativeLayout
+            android:id="@+id/rl_see_more_sitcom_on_remand_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_see_more_select_name"
+            android:layout_marginTop="@dimen/size_20"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_iv_layout_sitcom_classify_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_15"
+                android:text="选集"
+                android:textColor="@color/content_color"
+                android:textSize="@dimen/font_size_15" />
+
+            <com.readyidu.robot.ui.tv.view.SitcomHorizontalNavigationBar
+                android:id="@+id/horizontal_bar_sitcom_select"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_18"
+                android:layout_marginLeft="@dimen/size_15"
+                android:layout_marginRight="@dimen/size_15"
+                android:layout_marginTop="@dimen/size_5"
+                android:layout_toRightOf="@id/tv_iv_layout_sitcom_classify_title" />
+
+            <GridView
+                android:id="@+id/grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_iv_layout_sitcom_classify_title"
+                android:layout_marginLeft="@dimen/size_15"
+                android:layout_marginRight="@dimen/size_5"
+                android:layout_marginTop="@dimen/size_18"
+                android:background="@android:color/white"
+                android:numColumns="5"
+                android:scrollbars="none"/>
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_movie_on_demand_see_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_see_more_select_name"
+            android:layout_marginLeft="@dimen/size_15"
+            android:layout_marginRight="@dimen/size_15"
+            android:layout_marginTop="@dimen/size_15"
+            android:horizontalSpacing="@dimen/size_26"
+            android:numColumns="2"
+            android:verticalSpacing="@dimen/size_15"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/sv_tv_local_see_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_see_more_select_name"
+            android:layout_marginRight="@dimen/size_15"
+            android:layout_marginTop="@dimen/size_15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.readyidu.robot.ui.tv.view.flowlayout.TagFlowLayout
+                    android:id="@+id/tfl_tv_local_see_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_15" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+</merge>

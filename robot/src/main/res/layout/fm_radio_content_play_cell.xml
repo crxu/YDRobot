@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fm_radio_content_play_cell_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/fm_radio_content_play_cell_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@id/fm_radio_content_play_cell_time"
+        android:background="@drawable/shape_blue_radius_rect"
+        android:padding="2dp"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:text="直播"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/fm_radio_content_play_cell_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/fm_list_paly"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/fm_radio_content_play_cell_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/fm_radio_content_play_cell_play"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:lines="1"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/fm_radio_content_play_cell_actor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/fm_radio_content_play_cell_title"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="14dp"
+        android:textColor="#333333"
+        android:textSize="10sp"
+        android:lines="1"
+        android:ellipsize="end"
+        />
+
+</RelativeLayout>

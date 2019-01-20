@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tran_grey_background_tv_dialog"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_marginBottom="@dimen/size_240"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_240"
+        android:background="@drawable/shape_tv_search_list_bg"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/dialog_tv_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_15"
+            android:layout_marginLeft="@dimen/size_15"
+            android:text="@string/dialog_tv_list_tip"
+            android:textSize="@dimen/font_size_15"
+            android:textColor="@color/content_color"/>
+
+        <View
+            android:id="@+id/view_tv_search_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.5"
+            android:layout_below="@id/dialog_tv_list_title"
+            android:background="@color/color_line"
+            android:layout_marginTop="@dimen/size_15"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_tv_search_list"
+            android:layout_below="@id/view_tv_search_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

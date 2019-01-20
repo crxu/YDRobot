@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    >
+
+    <com.readyidu.basic.widgets.title.CustomerTitle
+        android:id="@+id/fm_more_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="更多分类" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fm_more_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fm_more_title"
+        android:background="@android:color/white" />
+
+    <com.readyidu.robot.component.voice.VoiceBar
+        android:id="@+id/voice_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

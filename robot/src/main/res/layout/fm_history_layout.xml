@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.readyidu.basic.widgets.title.CustomerTitle
+        android:id="@+id/fm_history_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightText="编辑"
+        app:title="播放历史" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/fm_history_list_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fm_history_title">
+
+        <!--<ListView-->
+            <!--android:id="@+id/fm_history_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:divider="@color/bg_color"-->
+            <!--android:dividerHeight="0.4dp" />-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fm_history_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/fm_history_bottom_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/bottom_play">
+
+        <com.readyidu.robot.ui.fm.view.CycleImageView
+            android:id="@+id/fm_history_bottom_play_cover"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="6dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fm_history_bottom_delete_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/material_blue"
+        android:visibility="gone"
+        >
+        <Button
+            android:id="@+id/fm_history_bottom_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:drawableLeft="@mipmap/fm_delete"
+            android:text="删除"
+            />
+    </RelativeLayout>
+
+
+    <com.readyidu.robot.component.voice.VoiceBar
+        android:id="@+id/voice_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

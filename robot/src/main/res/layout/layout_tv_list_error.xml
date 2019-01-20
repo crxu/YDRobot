@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_tv_play_select_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_error_network" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_7"
+            android:text="@string/failed_tv_load_data"
+            android:textColor="@color/color_login_line"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tv_tv_play_select_empty_reload"
+            android:layout_width="@dimen/size_83"
+            android:layout_height="@dimen/size_34"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_theme_color_round_border"
+            android:gravity="center"
+            android:text="@string/reload_data"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/font_size_15" />
+    </LinearLayout>
+</RelativeLayout>

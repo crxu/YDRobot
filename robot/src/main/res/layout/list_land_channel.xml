@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_height"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_4"
+        android:paddingRight="@dimen/size_4"
+        android:singleLine="true"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/font_size_15" />
+
+    <RelativeLayout
+        android:id="@+id/ll_program"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/size_15"
+        android:paddingRight="@dimen/size_15">
+
+        <ImageView
+            android:id="@+id/iv_port_channel_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_5"
+            android:src="@drawable/ic_port_channel_play"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_program_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_port_channel_play"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="暂无节目信息"
+            android:textColor="@color/tip_color"
+            android:textSize="@dimen/font_size_11" />
+    </RelativeLayout>
+
+</LinearLayout>

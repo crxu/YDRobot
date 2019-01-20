@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.readyidu.basic.widgets.title.CustomerTitle
+        android:id="@+id/fm_radio_play_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightText="更多频道" />
+
+    <ImageView
+        android:id="@+id/fm_radio_play_cover"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/fm_radio_play_head"
+        android:background="@mipmap/fm_radio_cover" />
+
+    <TextView
+        android:id="@+id/fm_radio_play_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_radio_play_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fm_radio_play_actor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_radio_play_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#70FFFFFF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/fm_radio_play_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_radio_play_actor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textColor="#70FFFFFF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/fm_radio_play_time_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_radio_play_cover"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/fm_radio_play_time_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/fm_radio_play_cover"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <SeekBar
+        android:id="@+id/fm_radio_play_seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_radio_play_cover"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@id/fm_radio_play_time_end"
+        android:layout_toRightOf="@id/fm_radio_play_time_start"
+        android:maxHeight="2.0dp"
+        android:minHeight="2.0dp"
+        android:progressDrawable="@drawable/shape_fm_seekbar"
+        android:thumb="@mipmap/fm_seekbar_thumb" />
+
+    <RelativeLayout
+        android:id="@+id/fm_radio_play_crt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_radio_play_seek"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <com.readyidu.robot.ui.fm.view.LoadCycleImageView
+            android:id="@+id/fm_radio_play_steps_play_play_cycle"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/fm_radio_play_steps_play_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/fm_play" />
+
+        <ImageButton
+            android:id="@+id/fm_radio_play_steps_play_b"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:layout_toLeftOf="@id/fm_radio_play_steps_play_play"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/fm_b" />
+
+        <ImageButton
+            android:id="@+id/fm_radio_play_steps_play_f"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/fm_radio_play_steps_play_play"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/fm_f" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fm_play_play_steps_play_list_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_radio_play_seek"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="42dp"
+        android:drawablePadding="4dp"
+        android:drawableTop="@mipmap/fm_list"
+        android:text="广播列表"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_color">
+
+        <ImageView
+            android:id="@+id/fm_radio_play_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/fm_radio_play_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:textColor="#999999"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/fm_radio_play_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@id/fm_radio_play_count"
+            android:layout_toRightOf="@id/fm_radio_play_logo"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/fm_radio_play_program_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fm_radio_play_title_name"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/fm_radio_play_count"
+            android:layout_toRightOf="@id/fm_radio_play_logo"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fm_radio_play_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <View
+            android:id="@+id/fm_radio_play_list_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#66000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/fm_radio_play_list_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabBackground="@drawable/shape_fm_list_head_radius_rect"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabMode="fixed"
+                app:tabPaddingEnd="0dp"
+                app:tabPaddingStart="0dp"
+                app:tabSelectedTextColor="@color/color_share_gray"
+                app:tabTextColor="@color/color_share_gray"
+                android:background="@drawable/shape_fm_list_head_radius_rect"
+                />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/fm_radio_play_list_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@android:color/white"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.readyidu.robot.component.voice.VoiceBar
+        android:id="@+id/voice_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

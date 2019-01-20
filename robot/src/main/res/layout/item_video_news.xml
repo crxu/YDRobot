@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.readyidu.robot.ui.news.widgets.RoundAngleRelativeLayout
+        android:id="@+id/rl_video_news"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_253"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:background="@drawable/bg_white_color_round"
+        app:topLeftRadius="@dimen/size_6"
+        app:topRightRadius="@dimen/size_6"
+        app:bottomLeftRadius="@dimen/size_6"
+        app:bottomRightRadius="@dimen/size_6">
+
+        <com.readyidu.robot.ui.news.video.JZVideoPlayerStandard
+            android:id="@+id/player_video_news"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_196"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_item_video_news_head"
+            android:layout_below="@id/player_video_news"
+            android:layout_width="@dimen/size_38"
+            android:layout_height="@dimen/size_38"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_10"
+            app:riv_border_color="@color/color_line"
+            app:riv_border_width="@dimen/size_0.5"
+            app:riv_oval="true"
+            app:riv_tile_mode="clamp" />
+
+        <TextView
+            android:id="@+id/tv_video_news_title"
+            android:layout_below="@id/player_video_news"
+            android:layout_toRightOf="@id/iv_item_video_news_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/size_2"
+            android:maxLines="2"
+            android:maxLength="38"
+            android:layout_marginTop="@dimen/size_8"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"/>
+
+        <TextView
+            android:id="@+id/tv_video_news_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_marginBottom="@dimen/size_10"
+            android:textSize="@dimen/size_12"
+            android:textColor="@color/tip_color"/>
+    </com.readyidu.robot.ui.news.widgets.RoundAngleRelativeLayout>
+
+    <TextView
+        android:layout_below="@id/rl_video_news"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15" />
+</RelativeLayout>

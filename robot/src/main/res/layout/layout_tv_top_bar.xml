@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/fullscreen_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_video_play_top">
+
+        <FrameLayout
+            android:id="@+id/fl_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_44"
+            android:paddingRight="@dimen/size_15">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/size_15"
+                android:scaleType="center"
+                android:src="@drawable/ic_top_bar_close2_white" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/window_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_video_play_top">
+
+        <FrameLayout
+            android:id="@+id/fl_left_window"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_44"
+            android:layout_marginTop="@dimen/size_23">
+
+            <ImageView
+                android:id="@+id/iv_back_window"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:padding="@dimen/size_16"
+                android:scaleType="center"
+                android:src="@drawable/ic_top_bar_close2_white" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_44"
+        android:layout_marginLeft="@dimen/size_45"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_23"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</merge>
