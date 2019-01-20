@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tran_tv_source_bg_color">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bright_tip"
+        android:layout_marginStart="@dimen/size_50"
+        android:layout_marginTop="@dimen/size_35"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_35"
+        android:text="亮度"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_volume_tip"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/size_50"
+        android:layout_marginTop="@dimen/size_35"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_50"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_35"
+        android:text="音量"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16"/>
+</RelativeLayout>

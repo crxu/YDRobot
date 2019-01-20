@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@android:color/white" />
+            <corners android:radius="@dimen/size_16" />
+            <size
+                android:width="@dimen/size_12"
+                android:height="@dimen/size_12" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/size_3"
+        android:left="@dimen/size_3"
+        android:right="@dimen/size_3"
+        android:top="@dimen/size_3">
+        <selector>
+            <item android:drawable="@mipmap/loading" />
+        </selector>
+    </item>
+</layer-list>

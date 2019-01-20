@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/tv_menu_detail_line1"
+        style="@style/line_theme_horizontal"
+        android:layout_marginLeft="@dimen/edge_size"
+        android:layout_marginRight="@dimen/edge_size" />
+
+    <ImageView
+        android:id="@+id/iv_menu_detail_tip"
+        android:layout_width="@dimen/size_18"
+        android:layout_height="@dimen/size_17"
+        android:layout_below="@id/tv_menu_detail_line1"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_20"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_menu_cook_tip" />
+
+    <TextView
+        android:id="@+id/rv_menu_detail_cook_tip_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_menu_detail_line1"
+        android:layout_marginLeft="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_toRightOf="@id/iv_menu_detail_tip"
+        android:text="@string/menu_detail_tip"
+        android:textColor="@color/content_color"
+        android:textSize="@dimen/font_size_17" />
+
+    <TextView
+        android:id="@+id/tv_menu_detail_cook_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_menu_detail_cook_tip_word"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_15" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:layout_below="@+id/tv_menu_detail_cook_tip" />
+</RelativeLayout>

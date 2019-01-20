@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <ImageView
+        android:id="@+id/fm_album_cell_select"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/fm_weixuan"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/fm_album_cell_image"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/transparent"
+        android:layout_toRightOf="@id/fm_album_cell_select"
+        />
+
+    <TextView
+        android:id="@+id/fm_album_cell_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/fm_album_cell_image"
+        android:lines="1"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/fm_album_cell_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_album_cell_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/fm_album_cell_image"
+        android:lines="1"
+        android:layout_marginRight="16dp"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/fm_album_cell_play_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_album_cell_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/fm_album_cell_image"
+        android:drawableLeft="@mipmap/fm_bofang_s"
+        android:drawablePadding="4dp"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/fm_album_cell_play_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fm_album_cell_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/fm_album_cell_play_count"
+        android:drawableLeft="@mipmap/fm_jishu"
+        android:drawablePadding="4dp"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>

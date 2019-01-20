@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">XyLottery</string>
+    <string name="stage">第%1$s期</string>
+    <string name="ticker_sel">更多彩种</string>
+    <string name="tick_ball">足彩</string>
+    <string name="tick_welfare">福彩</string>
+    <string name="tick_sports">体彩</string>
+</resources>

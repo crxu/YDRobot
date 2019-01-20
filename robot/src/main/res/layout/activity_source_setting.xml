@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/parent_style">
+
+    <com.readyidu.robot.ui.widgets.CustomTopBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:show_left_type="2"
+        app:show_right="false"
+        app:top_title="自定义频道设置" />
+
+    <RelativeLayout
+        android:id="@+id/container_change_tab_name"
+        style="@style/common_container_style"
+        android:layout_marginTop="@dimen/size_10">
+
+        <TextView
+            style="@style/content_text_style"
+            android:text="总的自定义频道命名" />
+
+        <ImageView style="@style/go_detail_style" />
+
+        <View style="@style/line_theme" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_edit_source"
+        style="@style/common_container_style">
+
+        <TextView
+            style="@style/content_text_style"
+            android:text="编辑自定义源" />
+
+        <ImageView style="@style/go_detail_style" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_add_source"
+        style="@style/common_container_style"
+        android:layout_marginTop="@dimen/size_10">
+
+        <TextView
+            style="@style/content_text_style"
+            android:text="添加自定义源" />
+
+        <ImageView style="@style/go_detail_style" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/container_synchronize_source"
+        style="@style/button_confirm_text_style"
+        android:layout_height="@dimen/size_50"
+        android:text="同步自定义源到TV盒子" />
+
+    <TextView
+        android:id="@+id/container_remove_source"
+        style="@style/button_confirm_text_style"
+        android:layout_height="@dimen/size_50"
+        android:layout_marginTop="@dimen/size_0"
+        android:text="解除TV的自定义源" />
+</LinearLayout>

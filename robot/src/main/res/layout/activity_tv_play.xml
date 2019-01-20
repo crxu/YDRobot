@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <com.readyidu.basic.widgets.EmptyView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <com.readyidu.robot.component.ijk.view.IjkPlayerView
+        android:id="@+id/ijk_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_200" />
+
+    <com.readyidu.robot.ui.tv.view.TvClassifyHorizontalNavigationBar
+        android:id="@+id/horizontal_bar_tv_play"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:background="@android:color/white" />
+
+    <View
+        android:id="@+id/view_play_line"
+        style="@style/line_theme_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5" />
+
+    <LinearLayout
+        android:id="@+id/rl_tv_play_movie_classify_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_tv_play_movie_classify1"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/selector_color_tab"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tv_tv_play_movie_classify2"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/selector_color_tab"
+            android:textSize="@dimen/font_size_16" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_source_setting"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_15"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/size_19"
+            android:layout_height="@dimen/size_19"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_source_setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_toRightOf="@+id/img"
+            android:text="@string/setting" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/size_45"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_add_tv_live_tip" />
+
+        <include layout="@layout/layout_add_custom_channel_tip" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_play_line2"
+        style="@style/line_theme_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_tv_play_select"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.readyidu.basic.widgets.EmptyView
+                android:id="@+id/news_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-50dp"
+                android:background="@color/background_color"
+                android:clickable="true"
+                app:img="@mipmap/ic_empty_tv"
+                app:msg="当前界面暂无节目内容" />
+
+            <include layout="@layout/layout_see_more_list" />
+        </FrameLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.readyidu.robot.component.voice.VoiceBar
+        android:id="@+id/voice_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

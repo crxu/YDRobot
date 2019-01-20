@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_weather_default">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_44"
+        android:layout_marginTop="@dimen/size_22">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="55dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/size_22"
+                android:layout_height="@dimen/size_22.5"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/size_15"
+                android:scaleType="center"
+                android:src="@drawable/ic_top_bar_close2_white" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="55dp">
+
+            <com.readyidu.robot.ui.widgets.slidingtab.SlidingTabLayout
+                android:id="@+id/commontablayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="55dp"
+                tl:tl_divider_color="@color/color_divider_line"
+                tl:tl_divider_padding="@dimen/size_14"
+                tl:tl_divider_width="@dimen/size_1"
+                tl:tl_iconHeight="@dimen/size_17"
+                tl:tl_iconWidth="@dimen/size_13"
+                tl:tl_indicator_corner_radius="2dp"
+                tl:tl_indicator_height="4dp"
+                tl:tl_indicator_width="4dp"
+                tl:tl_tab_width="@dimen/size_90"
+                tl:tl_textsize="@dimen/font_size_14" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top" />
+
+
+    <com.readyidu.robot.component.voice.VoiceBar
+        android:id="@+id/voice_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+</RelativeLayout>

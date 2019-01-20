@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_22"
+        android:background="@drawable/bg_status_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_below="@id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_44"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:id="@+id/fl_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="55dp">
+
+            <ImageView
+                android:id="@+id/iv_left1"
+                android:layout_width="@dimen/size_10"
+                android:layout_height="@dimen/size_22"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/size_15"
+                android:scaleType="center"
+                android:src="@drawable/ic_top_bar_close2"
+                tools:visibility="visible" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_news_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/size_95"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="视频"
+            android:textColor="@color/selector_color_theme_black"
+            android:textSize="@dimen/font_size_18" />
+
+        <TextView
+            android:id="@+id/tv_news_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/size_95"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="资讯"
+            android:textColor="@color/selector_color_theme_black"
+            android:textSize="@dimen/font_size_18" />
+
+        <View
+            android:id="@+id/bottom_line"
+            style="@style/line_theme" />
+
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_below="@id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_color" />
+
+            <com.readyidu.basic.widgets.EmptyView
+                android:id="@+id/news_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_color"/>
+        </FrameLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_video_news"
+        android:layout_below="@id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_43.5"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/theme_color"
+        app:tabIndicatorHeight="@dimen/size_2"
+        app:tabMode="scrollable"
+        app:tabTextColor="@color/tip_color"
+        app:tabSelectedTextColor="@color/theme_color"
+        app:tabTextAppearance="@style/tab_layout_text_style" />
+
+    <View
+        android:id="@+id/video_news_line"
+        android:layout_below="@id/tl_video_news"
+        style="@style/line_theme_horizontal"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_video_news"
+        android:layout_below="@id/video_news_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.readyidu.basic.widgets.EmptyView
+        android:id="@+id/video_news_empty"
+        android:layout_below="@id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color" />
+
+    <com.readyidu.robot.component.voice.VoiceBar
+        android:id="@+id/voice_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+</RelativeLayout>

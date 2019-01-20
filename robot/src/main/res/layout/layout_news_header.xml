@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_news_list_tip"
+        style="@style/tip_text_main_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_35"
+        android:layout_below="@id/top_bar"
+        android:background="@color/grey_background_color"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/size_6"
+        android:paddingLeft="@dimen/size_15"
+        android:paddingRight="@dimen/size_15"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/hot_recommend" />
+</RelativeLayout>

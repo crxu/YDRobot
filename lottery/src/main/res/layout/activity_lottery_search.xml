@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/launcher_main_bg1"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:text="查询记录"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:id="@+id/go_home_lottery"
+            android:text="进入彩票首页"
+            android:textColor="#f0f0f0"
+            android:textSize="22sp"
+            android:focusable="true"
+            android:gravity="center"
+            android:lines="1"
+            android:layout_marginRight="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/lottery_home_btn"
+            android:layout_width="160dp"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/line_bg_icon1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:background="@drawable/shap_title1"
+            android:paddingLeft="30dp"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:text="开奖记录（实际开奖以中心开奖结果为准）"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"/>
+
+        <com.readyidu.xylottery.view.TvRecyclerView
+            android:id="@+id/recycle_view"
+            android:background="#409e94b6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

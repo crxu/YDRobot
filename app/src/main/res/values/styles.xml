@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- BaseData application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+</resources>

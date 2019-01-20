@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/parent_style">
+
+    <com.readyidu.robot.ui.widgets.CustomTopBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:show_left_type="2"
+        app:show_right="true"
+        app:top_title="总的自定义频道命名" />
+
+    <TextView
+        android:id="@+id/txt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_height"
+        android:layout_alignBottom="@+id/top_bar"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/title_padding_top"
+        android:gravity="center"
+        android:padding="@dimen/size_6"
+        android:textSize="@dimen/size_15"
+        android:textColor="@color/content_color"
+        android:text="完成" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        style="@style/common_container_style"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginTop="@dimen/size_10">
+
+        <EditText
+            android:id="@+id/edit_name"
+            style="@style/edit_style"
+            android:hint="为您的自定义总频道重新命名吧" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_10"
+        android:text="不超过5个字"
+        android:textColor="@color/tip_color"
+        android:textSize="@dimen/font_size_16" />
+</RelativeLayout>

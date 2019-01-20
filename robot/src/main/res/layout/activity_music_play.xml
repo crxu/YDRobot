@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_music_play_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_540"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/view_music_tran_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_640"
+            android:background="#66000000" />
+
+        <RelativeLayout
+            android:id="@+id/container_music"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_540"
+            android:layout_marginBottom="@dimen/common_height"
+            android:orientation="vertical">
+
+            <com.readyidu.robot.ui.widgets.CustomTopBar
+                android:id="@+id/top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/title_padding_top"
+                app:bottom_line_color="@android:color/transparent"
+                app:double_title_text_color="@color/white"
+                app:show_double_title="true"
+                app:show_left_type="2"
+                app:show_status_bar="false"
+                app:show_title="false"
+                app:top_bar_bg_color="@color/translucent" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_music_play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ll_vp_points"
+                android:layout_below="@+id/top_bar"
+                android:layout_marginBottom="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_10" />
+
+            <LinearLayout
+                android:id="@+id/ll_vp_points"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_7"
+                android:layout_above="@+id/ll_music_play_progress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/size_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_vp_point1"
+                    android:layout_width="@dimen/size_7"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_music_vp_point" />
+
+                <TextView
+                    android:id="@+id/tv_vp_point2"
+                    android:layout_width="@dimen/size_7"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_4"
+                    android:background="@drawable/selector_music_vp_point" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_music_play_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_music_play_control"
+                android:layout_marginBottom="@dimen/size_26.5"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_time_cur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_weight="1">
+
+                    <SeekBar
+                        android:id="@+id/sb_tv_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-8dp"
+                        android:layout_marginStart="-8dp"
+                        android:background="@color/translucent"
+                        android:max="100"
+                        android:maxHeight="@dimen/size_3"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/bg_music_seek_bar"
+                        android:thumb="@drawable/selector_seek_bar" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_time_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_music_play_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/size_36"
+                android:layout_marginLeft="@dimen/size_25.5"
+                android:layout_marginRight="@dimen/size_25.5"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_music_play_mode"
+                    android:layout_width="@dimen/size_22"
+                    android:layout_height="@dimen/size_19"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_music_play_mode2" />
+
+                <Button
+                    android:id="@+id/bt_music_play_up"
+                    android:layout_width="@dimen/size_21"
+                    android:layout_height="@dimen/size_25"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/size_38.5"
+                    android:layout_toRightOf="@id/bt_music_play_mode"
+                    android:background="@drawable/selector_music_play_up" />
+
+                <Button
+                    android:id="@+id/bt_music_play_and_pause"
+                    android:layout_width="@dimen/size_60.5"
+                    android:layout_height="@dimen/size_60.5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/size_50"
+                    android:background="@drawable/selector_music_play_pause" />
+
+                <Button
+                    android:id="@+id/bt_music_play_next"
+                    android:layout_width="@dimen/size_21"
+                    android:layout_height="@dimen/size_25"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_38.5"
+                    android:layout_toLeftOf="@+id/bt_music_play_list"
+                    android:background="@drawable/selector_music_play_next" />
+
+                <Button
+                    android:id="@+id/bt_music_play_list"
+                    android:layout_width="@dimen/size_22"
+                    android:layout_height="@dimen/size_23"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/selector_music_play_list" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.readyidu.robot.ui.music.view.TipRelativeLayout
+        android:id="@+id/rl_music_play_mode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_70"
+        android:background="@color/theme_color"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_hook"
+            android:layout_width="@dimen/size_18"
+            android:layout_height="@dimen/size_18"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size_14"
+            android:layout_marginLeft="@dimen/size_15"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_hook" />
+
+        <TextView
+            android:id="@+id/tv_music_play_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size_13"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_toRightOf="@id/iv_hook"
+            android:text="已切换到单曲循环模式"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_17" />
+    </com.readyidu.robot.ui.music.view.TipRelativeLayout>
+
+    <com.readyidu.robot.component.voice.VoiceBar
+        android:id="@+id/voice_bar"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

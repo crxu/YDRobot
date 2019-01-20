@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion rootProject.versions_compileSdk as int
+    defaultConfig {
+        minSdkVersion rootProject.versions_minSdk as int
+        targetSdkVersion rootProject.versions_targetSdk as int
+        versionCode rootProject.versions_versionCode as int
+        versionName rootProject.versions_versionName
+        applicationId "com.readyidu.robot"
+        flavorDimensions "versionCode"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // dex突破65535的限制
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    /* lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }*/
+    dexOptions {
+        keepRuntimeAnnotatedClasses false
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':robot')
+    api project(':lottery')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+}
+
+//Method sum
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.6.4'
+    }
+}
+apply plugin: 'com.getkeepsafe.dexcount'

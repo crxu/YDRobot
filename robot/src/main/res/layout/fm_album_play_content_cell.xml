@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fm_album_play_content_cell_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp">
+
+        <ImageView
+            android:id="@+id/fm_album_play_content_cell_play_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/fm_list_paly"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/fm_album_play_content_cell_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/fm_album_play_content_cell_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:layout_toRightOf="@id/fm_album_play_content_cell_fl"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+</RelativeLayout>

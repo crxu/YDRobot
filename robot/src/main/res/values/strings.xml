@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">robot</string>
+    <string name="top_bar_title">YDRobot</string>
+    <string name="dialog_recoding">正在录音</string>
+    <string name="dialog_recoding_complete">松开完成</string>
+
+    <!--menu-->
+    <string name="menu">菜谱</string>
+    <string name="hot_recommend">热门推荐</string>
+    <string name="menu_detail_material_detail">食材清单</string>
+    <string name="menu_detail_step">烹饪步骤</string>
+    <string name="menu_detail_tip">小窍门</string>
+
+    <!--music-->
+    <string name="music">音乐</string>
+    <!--tv-->
+    <string name="change_source">切源</string>
+    <string name="all_channel">全部频道</string>
+    <string name="dialog_tv_list_tip">为您找到如下结果:</string>
+    <string name="dialog_network_tip">流量提示</string>
+    <string name="dialog_network_content1">当前使用的不是wifi网络，是否确定</string>
+    <string name="dialog_network_content2">要使用手机流量观看?</string>
+    <string name="change_tv_source">请稍后，正在切换播放源</string>
+    <string name="change_tv_source2">视频播放失败，正在切换播放源</string>
+    <string name="change_tv_channel">请稍后，正在切换频道</string>
+    <string name="no_program_info">暂无节目信息</string>
+    <string name="no_channel_info">暂无频道信息</string>
+    <string name="failed_get_tv_channel">获取频道信息失败</string>
+    <string name="failed_get_tv_source">获取播放源失败</string>
+    <string name="failed_tv_load">视频加载失败，请重试</string>
+    <string name="channel_can_not_watch">当前频道暂时不能播放，请观看其他频道内容</string>
+    <string name="failed_tv_load_data">网络错误，数据请求失败</string>
+    <string name="reload_data">重新加载</string>
+    <string name="tv_live">电视直播</string>
+    <string name="add_tv_live_tip">免费高清影视和院线大片看不停</string>
+    <string name="custom_channel">自定义频道</string>
+    <string name="add_custom_channel_tip">海量精彩日剧、韩剧、美剧看不停</string>
+    <string name="open_at_once">立即开启</string>
+    <string name="visit_forum">访问论坛</string>
+    <string name="scan_a_scan">扫一扫</string>
+
+    <!--news-->
+    <string name="news">新闻</string>
+    <string name="replay">重播</string>
+    <string name="already_look">已观看</string>
+
+    <!--common-->
+    <string name="tips_not_wifi">您当前正在使用移动网络，继续播放将消耗流量</string>
+    <string name="tips_not_wifi_confirm">继续播放</string>
+    <string name="no_net">当前找不到网络</string>
+    <string name="tips_not_wifi_cancel">停止播放</string>
+    <string name="no_url">播放地址无效</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="failed_request_data">数据请求失败</string>
+    <string name="failed_request_classify">频道分类列表请求失败</string>
+    <string name="already_disconnected">您已断开连接</string>
+    <string name="play_is_use_mobile">正在使用移动网络播放</string>
+
+    <!--ijk player-->
+    <string name="video_record">记忆上次播放到</string>
+    <string name="video_skip">继续播放</string>
+    <string name="str">显示\n列表</string>
+    <string name="scan_tip">打开TV盒子，选择手机直播，\n并用手机扫描电视屏幕上面的二维码, \n即可获得电视直播观看权限。</string>
+    <string name="add_source_tip">点击下方按钮访问论坛，\n选择你感兴趣的自定义源帖子。 \n点击右下角的立即添加按钮， \n即可自动为您添加自定义源。</string>
+    <string name="add_source">立即\n添加</string>
+    <string name="wait_tv_confirm">等待TV盒子端确认 \n是否同意添加电视直播观看权限</string>
+    <string-array name="media_quality">
+        <item>流畅</item>
+        <item>清晰</item>
+        <item>高清</item>
+        <item>超清</item>
+        <item>1080P</item>
+    </string-array>
+
+</resources>

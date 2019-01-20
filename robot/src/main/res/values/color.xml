@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="material_blue">#ff03A9F4</color>
+    <color name="theme_color_tran_10">#E6619FFF</color>
+    <color name="translucent">#00000000</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="grey_background1">#F3F3F5</color>
+    <color name="tran_grey_white_background">#99FFFFFF</color>
+    <color name="tran_grey_background_tv_dialog">#A4000000</color>
+    <color name="tran_tv_source_bg_color">#AA1D1E1E</color>
+    <color name="music_lrc_color">#4cFFFFFF</color>
+    <color name="content_text_color">#454545</color>
+
+    <color name="color_f8f8f8">#f8f8f8</color>
+    <color name="color_f46058">#f46058</color>
+
+    <color name="color_divider_line">#80ffffff</color>
+
+
+    <color name="color_share_red">#CE4939</color>
+    <color name="color_share_green">#679A40</color>
+    <color name="color_share_gray">#333333</color>
+    <color name="color_gray">#EDEDED</color>
+</resources>

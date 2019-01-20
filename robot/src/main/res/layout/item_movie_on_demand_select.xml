@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_movie_on_demand_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:background="@drawable/bg_movie_on_demand_unselect">
+
+        <TextView
+            android:id="@+id/tv_movie_on_demand_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_15"
+            android:layout_marginRight="@dimen/size_45"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/selector_color_theme_white"
+            android:textSize="@dimen/font_size_15" />
+
+        <ImageView
+            android:id="@+id/iv_movie_on_demand_play"
+            android:layout_width="@dimen/size_18"
+            android:layout_height="@dimen/size_18"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_15"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_movie_on_demand_item_tip"
+        android:layout_below="@id/rl_movie_on_demand_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15"
+        android:visibility="gone"/>
+</RelativeLayout>

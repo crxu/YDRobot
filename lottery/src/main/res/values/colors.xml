@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tabs_bg">#619fff</color>
+    <color name="stage">#555555</color>
+    <color name="laber">#333333</color>
+    <color name="devel_tab">#eeeeee</color>
+    <color name="circle_red">#ff583e</color>
+    <color name="circle_blue">#619fff</color>
+</resources>

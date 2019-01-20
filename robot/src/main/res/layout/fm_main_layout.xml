@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/fm_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/fm_main_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_top_bar_close2"
+            android:background="@android:color/transparent"
+            />
+
+        <ImageButton
+            android:id="@+id/fm_main_head_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/fm_history"
+            />
+
+        <EditText
+            android:id="@+id/fm_main_head_edt"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/fm_main_back"
+            android:layout_toLeftOf="@id/fm_main_head_history"
+            android:background="@drawable/shape_gray_search_radius_rect"
+            android:drawableLeft="@mipmap/sousuo"
+            android:drawablePadding="4dp"
+            android:hint="搜你想听的内容"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/fm_main_all"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/fm_main_title"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white"
+        android:src="@mipmap/fm_quanbu"
+        />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/fm_main_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/fm_main_title"
+        android:layout_toLeftOf="@id/fm_main_all"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="4dp"
+        android:background="@android:color/white"
+        app:tabIndicatorColor="#61C3FF"
+        app:tabSelectedTextColor="#61C3FF"
+        app:tabTextColor="#333333"
+        app:tabBackground="@android:color/white"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabMode="scrollable"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fm_main_title_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fm_main_tabs"
+        />
+
+    <RelativeLayout
+        android:id="@+id/fm_main_bottom_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/bottom_play">
+
+        <com.readyidu.robot.ui.fm.view.CycleImageView
+            android:id="@+id/fm_main_bottom_play_cover"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="6dp" />
+
+    </RelativeLayout>
+
+    <com.readyidu.robot.component.voice.VoiceBar
+        android:id="@+id/voice_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+    
+</RelativeLayout>

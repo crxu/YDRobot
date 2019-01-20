@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background1">
+
+    <com.readyidu.robot.ui.widgets.CustomTopBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:show_left_type="2"
+        app:show_right="false"
+        app:top_title="@string/menu" />
+
+    <TextView
+        android:id="@+id/tv_menu_list_tip"
+        style="@style/tip_text_main_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_35"
+        android:layout_below="@id/top_bar"
+        android:background="@color/grey_background_color"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/size_6"
+        android:paddingLeft="@dimen/size_15"
+        android:paddingRight="@dimen/size_15"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/hot_recommend"
+        android:visibility="gone" />
+
+    <com.readyidu.robot.ui.widgets.MusicLineView
+        android:id="@+id/iv_status"
+        android:layout_width="@dimen/size_32"
+        android:layout_height="@dimen/size_20"
+        android:layout_alignBottom="@+id/top_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_25"
+        android:padding="@dimen/size_4"
+        android:visibility="gone"
+        app:jungle68_anim_is_start="false"
+        app:jungle68_line_color="@color/theme_color"
+        app:jungle68_line_nums="7"
+        app:jungle68_line_spacing="2dp"
+        app:jungle68_line_with="6dp"
+        app:jungle68_max_level="6"
+        app:jungle68_max_line_height="18dp" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_menu_list_tip">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey_background1" />
+
+            <com.readyidu.basic.widgets.EmptyView
+                android:id="@+id/news_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_color"
+                android:clickable="true"
+                android:visibility="gone" />
+        </FrameLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.readyidu.robot.component.voice.VoiceBar
+        android:id="@+id/voice_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>
