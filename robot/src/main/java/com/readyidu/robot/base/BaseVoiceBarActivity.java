@@ -9,7 +9,7 @@ import com.readyidu.robot.component.voice.VoiceCallBack;
 import com.readyidu.robot.ui.activity.RobotActivity;
 import com.readyidu.robot.utils.app.ActivityUtils;
 import com.readyidu.robot.utils.app.SystemUtils;
-import com.readyidu.utils.JLog;
+import com.readyidu.robot.utils.JLog;
 
 import java.util.concurrent.TimeUnit;
 

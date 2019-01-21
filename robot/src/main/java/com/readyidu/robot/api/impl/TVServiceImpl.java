@@ -13,7 +13,7 @@ import com.readyidu.robot.model.business.tv.TvChannelParent;
 import com.readyidu.robot.model.business.tv.TvSource;
 import com.readyidu.robot.model.business.tv.TvType;
 import com.readyidu.robot.model.business.tv.base.Base;
-import com.readyidu.utils.JLog;
+import com.readyidu.robot.utils.JLog;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;

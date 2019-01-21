@@ -36,7 +36,6 @@ android {
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     api project(':robot')
-    api project(':lottery')
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }
 

@@ -10,7 +10,7 @@ import com.readyidu.robot.AppConfig;
 import com.readyidu.robot.R;
 import com.readyidu.robot.ui.widgets.recyclerview.CustomerLayoutManager;
 import com.readyidu.robot.utils.log.LogUtils;
-import com.readyidu.utils.JLog;
+import com.readyidu.robot.utils.JLog;
 
 /**
  * Created by gx on 2017/10/16.

@@ -29,7 +29,8 @@ import com.readyidu.robot.ui.widgets.CustomTopBar;
 import com.readyidu.robot.utils.log.LogUtils;
 import com.readyidu.robot.utils.view.MeasureUtil;
 import com.readyidu.robot.utils.view.ToastUtil;
-import com.readyidu.utils.JLog;
+import com.readyidu.robot.utils.JLog;
+
 
 import java.lang.reflect.Field;
 

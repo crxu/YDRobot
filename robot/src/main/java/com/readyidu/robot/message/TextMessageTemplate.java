@@ -10,7 +10,7 @@ import com.readyidu.robot.event.SearchXYBrainEvent;
 import com.readyidu.robot.message.base.BaseMessageTemplate;
 import com.readyidu.robot.message.base.Message;
 import com.readyidu.robot.ui.adapter.common.base.ViewHolder;
-import com.readyidu.utils.JLog;
+import com.readyidu.robot.utils.JLog;
 
 /**
  * Created by gx on 2017/10/11.

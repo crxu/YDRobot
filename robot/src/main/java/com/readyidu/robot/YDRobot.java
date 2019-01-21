@@ -80,8 +80,7 @@ import com.readyidu.robot.utils.log.LogLevel;
 import com.readyidu.robot.utils.log.LogUtils;
 import com.readyidu.robot.utils.view.DialogUtils;
 import com.readyidu.robot.utils.view.ToastUtil;
-import com.readyidu.utils.JLog;
-import com.readyidu.xylottery.LotteryTabActivity;
+import com.readyidu.robot.utils.JLog;
 import com.ximalaya.ting.android.opensdk.datatrasfer.CommonRequest;
 
 import org.json.JSONException;
@@ -620,12 +619,12 @@ public class YDRobot {
 
     public void execMessage(final SearchXYBrainEvent searchXYBrainEvent) {
         JLog.e("execMessage -->"+searchXYBrainEvent.resultsV);
-        if(searchXYBrainEvent.resultsV.equalsIgnoreCase("彩票")){
+      /*  if(searchXYBrainEvent.resultsV.equalsIgnoreCase("彩票")){
             RxBus.getInstance().send(searchXYBrainEvent);
             RxBus.getInstance().send(new MessageStatusChangedEvent(searchXYBrainEvent, 1));
             startActivity(new Intent(context, LotteryTabActivity.class));
             return;
-        }
+        }*/
 
         ApiManager.getInstance()
                 .getBrainReply(searchXYBrainEvent.resultsV)
@@ -947,10 +946,10 @@ public class YDRobot {
                 }
                 break;
 
-            case AppConfig.TYPE_lottery:
+        /*    case AppConfig.TYPE_lottery:
                 startActivity(new Intent(context, LotteryTabActivity.class));
                 break;
-
+*/
 
             default:
                 break;

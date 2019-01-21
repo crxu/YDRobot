@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import com.readyidu.basic.base.ViewHolder;
-import com.readyidu.utils.JLog;
+import com.readyidu.robot.utils.JLog;
 
 import java.util.List;
 

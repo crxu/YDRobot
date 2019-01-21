@@ -17,7 +17,7 @@ import com.readyidu.robot.event.BindEvent;
 import com.readyidu.robot.event.MessageStatusChangedEvent;
 import com.readyidu.robot.event.SearchXYBrainEvent;
 import com.readyidu.robot.utils.log.LogUtils;
-import com.readyidu.utils.JLog;
+import com.readyidu.robot.utils.JLog;
 
 import static android.media.AudioManager.FLAG_SHOW_UI;
 

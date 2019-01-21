@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.readyidu.robot.component.rxbus.RxBus;
 import com.readyidu.robot.utils.view.ToastUtil;
-import com.readyidu.utils.JLog;
+import com.readyidu.robot.utils.JLog;
 
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;

@@ -10,7 +10,7 @@ import com.readyidu.basic.widgets.EmptyView;
 import com.readyidu.robot.R;
 import com.readyidu.robot.ui.adapter.common.wrapper.HeaderAndFooterWrapper;
 import com.readyidu.robot.utils.view.MeasureUtil;
-import com.readyidu.utils.JLog;
+import com.readyidu.robot.utils.JLog;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnLoadmoreListener;

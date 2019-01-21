@@ -15,7 +15,7 @@ import com.readyidu.robot.model.MessageModel;
 import com.readyidu.robot.ui.adapter.common.base.ViewHolder;
 import com.readyidu.robot.utils.event.EventUtils;
 import com.readyidu.robot.utils.view.DialogUtils;
-import com.readyidu.utils.JLog;
+import com.readyidu.robot.utils.JLog;
 
 import java.util.ArrayList;
 

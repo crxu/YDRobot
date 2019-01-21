@@ -1,1 +1,1 @@
-include ':app', ':robot', ':accounts', ':lottery'
+include ':app', ':robot'
