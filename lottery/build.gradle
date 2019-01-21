@@ -47,4 +47,5 @@ dependencies {
     api 'com.hyman:flowlayout-lib:1.1.2'
     api 'com.orhanobut:logger:2.2.0'
     api 'com.readyidu.health:basic:2.0.44-SNAPSHOT'
+    api 'com.google.code.gson:gson:2.8.0'
 }
